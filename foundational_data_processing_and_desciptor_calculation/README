@@ -1,0 +1,23 @@
+# Foundational Data Processing and Descriptor Calculation
+
+This folder contains code and notebooks for handling chemical crystal data and extracting molecular descriptors. The scripts demonstrate data loading, cleaning, normalization, and calculation of 2D/3D molecular descriptors along with charge and chemical feature descriptors.
+
+Key content:
+- Data preprocessing scripts for refinement and normalization.
+- Descriptor calculators (2D, 3D, charge) to generate feature sets from crystal molecular structures.
+- Summary scripts for aggregating descriptor data and statistical analysis.
+
+These form the backbone for downstream cheminformatics analyses and machine learning modeling.
+
+## Usage
+
+Run the scripts/notebooks sequentially for extracting and preparing descriptor datasets. Required inputs are crystal reference codes and structure files as CSV or CSD format.
+
+## Dependencies
+
+- Python 3.x
+- pandas
+- numpy
+- rdkit
+- matplotlib (for visualization)
+- CCDC Python API (for reading crystal data)

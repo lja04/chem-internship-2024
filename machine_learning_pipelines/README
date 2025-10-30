@@ -1,0 +1,26 @@
+# Machine Learning Pipelines
+
+This folder contains comprehensive Jupyter notebooks implementing supervised machine learning models to classify molecular crystal properties from descriptor data.
+
+Models included:
+- Decision Trees with hyperparameter tuning and evaluation.
+- Feature Importance analysis for model interpretability.
+- Logistic Regression classification pipelines.
+- Random Forest ensemble models.
+- Support Vector Machines (SVM) with advanced grid search for optimization.
+
+Workflows demonstrate data balancing, train-test splits, model tuning, validation metrics, confusion matrix visualization, and model saving for later reuse.
+
+## Usage
+
+Run notebooks in order to replicate modeling experiments. Data preprocessing should be done beforehand. GridSearchCV is used for hyperparameter tuning.
+
+## Dependencies
+
+- Python 3.x
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- joblib (for model saving)
+- jupyter/notebook environment
