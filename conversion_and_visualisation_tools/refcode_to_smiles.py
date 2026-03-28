@@ -1,10 +1,10 @@
 from ccdc.io import EntryReader
 from ccdc.molecule import Molecule
 
-# Load the database
-reader = EntryReader('CSD')
+reader = EntryReader('CSD') # Load the database
 
-# List of refcodes
+# Refcodes
+
 refcodes = ['FECKIK',
     'WOCGOK',
     'BOQQUT',
@@ -29,18 +29,18 @@ refcodes = ['FECKIK',
     'BZCOCT',
     'BEVCEK',
     'VIGTUA',
-    'VENYUI']  # Add your desired refcodes here
+    'VENYUI']
 
 # Loop through refcodes
+
 for refcode in refcodes:
     try:
-        # Retrieve the entry by refcode
-        entry = reader.entry(refcode)
-        
-        # Convert to SMILES
-        smiles = entry.molecule.smiles
+        entry = reader.entry(refcode) # Retrieve the entry by refcode
+        smiles = entry.molecule.smiles # Convert to SMILES
         print(f"{refcode}: {smiles}")
+
     except KeyError:
         print(f"Entry not found for refcode: {refcode}")
+        
     except Exception as e:
         print(f"Error processing {refcode}: {str(e)}")
